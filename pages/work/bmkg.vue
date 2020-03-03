@@ -24,16 +24,16 @@
     </nav>
     <header class="heading">
       <div class="heading__inner" data-aos="fade-up" data-aos-delay="600">
-        <h1>Banyumas Explorer</h1>
+        <h1>BMKG Cilacap</h1>
       </div>
     </header>
     <section class="information" data-aos="fade-up" data-aos-delay="750">
       <div
         class="information__detail"
-      >A work-in-progress mobile application that is built on Android Studio to provide information about tourist attractions in Banyumas. The user can also book a ticket by choosing which places they are interested in. This app is using Firebase Authentication and Realtime Database for the back-end. This app is very far from perfect and needs a lot of revision.</div>
+      >A work-in-progress website application for predicting the potential of flood events in Cilacap Regency. This app is built using Flask, HTML, CSS and Javascript and Anaconda, mainly Jupyter Notebook for data analysis. The data is obtained from the BMKG Cilacap itself, using Annual Rainfall Data.</div>
       <div class="information__type">
         <ul>
-          <li>Android App Development, UI/UX, Design</li>
+          <li>Web Apps Development, UI/UX, Design</li>
         </ul>
       </div>
       <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312.757 312.757">
@@ -44,35 +44,27 @@
       </svg>
     </section>
 
-    <img src="~assets/images/banyumas/banyumas-p.jpg" alt />
+    <img src="~assets/images/bmkg/1.png" alt />
     <div class="grid__image">
-      <img src="~assets/images/banyumas/banyumas-1.jpeg" alt />
-      <img src="~assets/images/banyumas/banyumas-2.jpeg" alt />
-      <img src="~assets/images/banyumas/banyumas-3.jpeg" alt />
-      <img src="~assets/images/banyumas/banyumas-4.jpeg" alt />
-      <img src="~assets/images/banyumas/banyumas-5.jpeg" alt />
-      <img src="~assets/images/banyumas/banyumas-6.jpeg" alt />
-      <img src="~assets/images/banyumas/banyumas-7.jpeg" alt />
-      <img src="~assets/images/banyumas/banyumas-8.jpeg" alt />
-      <img src="~assets/images/banyumas/banyumas-9.jpeg" alt />
-      <img src="~assets/images/banyumas/banyumas-10.jpeg" alt />
-      <img src="~assets/images/banyumas/banyumas-11.jpeg" alt />
+      <img src="~assets/images/bmkg/2.png" alt />
+      <img src="~assets/images/bmkg/3.png" alt />
+      <img src="~assets/images/bmkg/4.png" alt />
     </div>
 
     <div class="more__projects">
       <ul>
         <li>
-          <nuxt-link to="/work/fukuo">
-            Fukuo Themes
+          <nuxt-link to="/work/banyumas-explorer">
+            Banyumas Explorer
             <span class="more__projects--preview">Previous project</span>
           </nuxt-link>
         </li>
         <!-- <li>See more projects</li> -->
         <li>
-          <nuxt-link to="/work/rongsokin">
-            RongsokIn
+          <a href="https://fukou.github.io/refleksi-pendidikan">
+            Refleksi Pendidikan
             <span class="more__projects--preview">Next project</span>
-          </nuxt-link>
+          </a>
         </li>
       </ul>
     </div>
@@ -86,7 +78,7 @@ export default {
   },
   head() {
     return {
-      title: 'Banyumas Explorer - Faiz Ichsan Jaya | Portfolio Website'
+      title: 'BMKG Cilacap - Faiz Ichsan Jaya | Portfolio Website'
     }
   }
 }
@@ -99,13 +91,12 @@ export default {
 
 .grid__image {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 3.5rem;
   padding: 3rem;
-  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 
   @media (max-width: 60rem) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 1.5rem;
     grid-gap: 2rem;
   }

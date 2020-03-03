@@ -50,6 +50,15 @@
             <div class="type">Android App Development, UI/UX, Design</div>
           </li>
           <li class="projects__list--item">
+            <nuxt-link to="/work/bmkg">
+              <div class="links" data-img="/images/7.png">
+                BMKG Cilacap
+                <sup class="sup__wip">Wip</sup>
+              </div>
+            </nuxt-link>
+            <div class="type">Web Apps Development, UI/UX, Design</div>
+          </li>
+          <li class="projects__list--item">
             <a href="https://fukou.github.io/refleksi-pendidikan/">
               <div class="links" data-img="/images/4.png">
                 Refleksi Pendidikan di Indonesia
