@@ -16,9 +16,27 @@ export default {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/logofaiz.ico' },
+      {
+        rel: 'apple-touch-icon',
+        type: 'image/png',
+        sizes: '180x180',
+        href: '/apple-touch-icon.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favicon-32x32.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/favicon-32x32.png'
+      },
       { rel: 'stylesheet', href: 'https://unpkg.com/aos@next/dist/aos.css' },
-      { rel: 'stylesheet', href: 'https://emoji-css.afeld.me/emoji.css' }
+      { rel: 'stylesheet', href: 'https://emoji-css.afeld.me/emoji.css' },
+      { rel: 'manifest', href: '/site.webmanifest' }
     ],
     script: [
       {

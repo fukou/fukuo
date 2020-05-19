@@ -77,8 +77,7 @@ html {
 .intro-leave-active {
   transition-duration: $t-duration * 2;
 
-  &::before,
-  &::after {
+  &::before {
     content: '';
     position: fixed;
     top: 0;
@@ -86,7 +85,7 @@ html {
     z-index: 2;
     display: block;
     width: 100%;
-    height: 50%;
+    height: 100%;
     transition-property: opacity, transform;
     transition-timing-function: ease-in-out;
   }
@@ -95,16 +94,15 @@ html {
     background-color: #f8a978;
   }
 
-  &::after {
-    top: 50%;
-    background-color: #f8a978;
-  }
+  // &::after {
+  //   top: 50%;
+  //   background-color: #f8a978;
+  // }
 }
 
 .intro-leave {
-  &::before,
-  &::after {
-    transform: scaleX(0);
+  &::before {
+    transform: scaleY(0);
   }
 }
 
@@ -113,24 +111,22 @@ html {
     transition-duration: $t-duration;
   }
 
-  &::after {
-    transition-duration: $t-duration - $t-delay;
-    transition-delay: $t-delay;
-  }
+  // &::after {
+  //   transition-duration: $t-duration - $t-delay;
+  //   transition-delay: $t-delay;
+  // }
 }
 
 .intro-leave-to {
-  &::before,
-  &::after {
+  &::before {
     transform: scale(1);
-    transform-origin: left;
+    transform-origin: bottom;
   }
 }
 
 .intro-enter {
-  &::before,
-  &::after {
-    transform: scaleX(1);
+  &::before {
+    transform: scaleY(1);
   }
 }
 
@@ -139,17 +135,16 @@ html {
     transition-duration: $t-duration;
   }
 
-  &::after {
-    transition-duration: $t-duration - $t-delay;
-    transition-delay: $t-delay;
-  }
+  // &::after {
+  //   transition-duration: $t-duration - $t-delay;
+  //   transition-delay: $t-delay;
+  // }
 }
 
 .intro-enter-to {
-  &::before,
-  &::after {
-    transform: scaleX(0);
-    transform-origin: right;
+  &::before {
+    transform: scaleY(0);
+    transform-origin: top;
   }
 }
 
@@ -244,6 +239,10 @@ select {
   left: 0;
   pointer-events: none;
   opacity: 0;
+
+  @media (max-width: 60rem) {
+    display: none;
+  }
 }
 
 .hover-reveal__inner,

@@ -47,7 +47,7 @@
         Say hello
         <!-- <i class="em em-wave" aria-role="presentation" aria-label="WAVING HAND SIGN"></i> -->
       </p>
-      <a class="links" href="mailto:faizichsanj@gmail.com">faizichsanj@gmail.com</a>
+      <a href="mailto:faizichsanj@gmail.com">faizichsanj@gmail.com</a>
     </div>
     <!-- <div class="credit">
       Copyright &copy; 2020 Faiz Ichsan Jaya. All rights reserved.

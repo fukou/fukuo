@@ -12,10 +12,11 @@
       <div class="go-to-resume">
         <a
           class="primary"
-          href="https://drive.google.com/file/u/1/d/196UFz_pHfTQl2cttNpW2OXkOwnZvx9co/view?usp=drive_open"
+          href="https://drive.google.com/open?id=1tuiA9oLSxPgdmkGyN3S29PKRACmQADqd"
           rel="noopener"
           target="_blank"
-        >Resume</a>
+          >Resume</a
+        >
       </div>
     </nav>
   </div>

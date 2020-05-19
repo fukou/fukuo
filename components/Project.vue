@@ -67,26 +67,26 @@
             </a>
             <div class="type">Web Design Interactive</div>
           </li>
+          <!--
           <li class="projects__list--item">
-            <nuxt-link to="/work/rongsokin" style="text-decoration:none;">
+            <nuxt-link to="/work/rongsokin" style="text-decoration:none; pointer-events:none;">
               <div class="links" data-img="/images/5.png">
                 <span class="disabled">RongsokIn</span>
                 <sup class="sup__no">Not live</sup>
-                <!-- <i class="em em-man-gesturing-no" aria-role="presentation" aria-label></i> -->
               </div>
             </nuxt-link>
             <div class="type">Front-end Development, UI/UX</div>
           </li>
           <li class="projects__list--item">
-            <nuxt-link to="/work/artoku" style="text-decoration:none;">
+            <nuxt-link to="/work/artoku" style="text-decoration:none; pointer-events:none;">
               <div class="links" data-img="/images/6.jpg">
                 <span class="disabled">Arto-Ku</span>
                 <sup class="sup__no">Not live</sup>
-                <!-- <i class="em em-man-gesturing-no" aria-role="presentation" aria-label></i> -->
               </div>
             </nuxt-link>
             <div class="type">Android App Development, UI/UX, Design</div>
           </li>
+          -->
         </ul>
       </div>
     </section>
@@ -214,12 +214,35 @@ export default {
     max-width: 60rem;
     margin-top: -12.5rem;
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 2px solid #444;
     padding: 4.5rem 5rem 3rem 5rem;
     font-family: 'Inter', sans-serif;
-    // z-index: 5;
 
-    box-shadow: 12px 12px #eaddcf, 25px 25px rgba(209, 158, 125, 1);
+    // box-shadow: 12px 12px #eaddcf, 25px 25px rgba(209, 158, 125, 1);
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: -14px;
+      top: 14px;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      border: 2px solid #444;
+      z-index: -2;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: -26px;
+      top: 26px;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      border: 2px solid #444;
+      z-index: -3;
+    }
 
     @media (max-width: 60rem) {
       margin-top: -8rem;
