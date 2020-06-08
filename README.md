@@ -1,4 +1,4 @@
-# fukuo.design
+# fukuo
 
 > Source code for fukuo.design, a portfolio web for showcasing my work
 
