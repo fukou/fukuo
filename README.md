@@ -1,8 +1,9 @@
-# faizij
+# fukuo.design
 
-> Portfolio Website
+> Source code for fukuo.design, a portfolio web for showcasing my work
 
 ## Build Setup
+- Node.js >= 10.0.0 version
 
 ``` bash
 # install dependencies
@@ -19,4 +20,8 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Credits
+- Built with [Nuxt.js](https://nuxtjs.org). 
+- Fonts used are [Herbert](https://www.behance.net/gallery/80371811/Herbert-font-free-regular) and [Inter UI](https://rsms.me/inter/)
+- Custom Cursor by [Hermanwikner](https://github.com/hermanwikner/vue-custom-cursor)
+- Animation library (AOS) by [Michalsnik](https://github.com/michalsnik/aos)
