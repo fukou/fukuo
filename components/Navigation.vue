@@ -12,7 +12,7 @@
       <div class="go-to-resume">
         <a
           class="primary"
-          href="https://drive.google.com/open?id=1tuiA9oLSxPgdmkGyN3S29PKRACmQADqd"
+          href="https://drive.google.com/file/d/1jotonh9vo0OsdWY2vlC23Jse-_O_8rCg/view?usp=sharing"
           rel="noopener"
           target="_blank"
           >Resume</a

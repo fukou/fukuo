@@ -230,6 +230,11 @@ export default {
       background-color: #fff;
       border: 2px solid #444;
       z-index: -2;
+
+      @media (max-width:60rem) {
+        right:-10px;
+        top:10px;
+      }
     }
 
     &:after {
@@ -242,6 +247,10 @@ export default {
       background-color: #fff;
       border: 2px solid #444;
       z-index: -3;
+
+      @media (max-width:60rem) {
+        display:none;
+      }
     }
 
     @media (max-width: 60rem) {
