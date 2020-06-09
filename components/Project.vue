@@ -231,9 +231,9 @@ export default {
       border: 2px solid #444;
       z-index: -2;
 
-      @media (max-width:60rem) {
-        right:-10px;
-        top:10px;
+      @media (max-width: 60rem) {
+        right: -9px;
+        top: 9px;
       }
     }
 
@@ -248,8 +248,8 @@ export default {
       border: 2px solid #444;
       z-index: -3;
 
-      @media (max-width:60rem) {
-        display:none;
+      @media (max-width: 60rem) {
+        display: none;
       }
     }
 
