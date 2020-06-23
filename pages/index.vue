@@ -88,7 +88,7 @@ header {
   letter-spacing: -1px;
 
   @media (max-width: 60rem) {
-    font-size: 1.65em;
+    font-size: 1.85em;
   }
 
   .underlined {
