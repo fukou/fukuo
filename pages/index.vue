@@ -5,7 +5,7 @@
         <Navigation data-aos="fade-up" data-aos-delay="500" />
         <header data-aos="fade-up" data-aos-delay="700">
           Hello! My name is
-          <span class="outlined">Faiz.</span> I am a
+          <span class="outlined">Faiz Ichsan Jaya.</span> I am a
           <span class="underlined">front-end web developer</span> who is
           passionate in building a good design and app that is accessible to
           <span
