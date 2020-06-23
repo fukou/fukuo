@@ -35,6 +35,11 @@ export default {
         href: '/favicon-32x32.png'
       },
       { rel: 'stylesheet', href: 'https://unpkg.com/aos@next/dist/aos.css' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet'
+      },
       { rel: 'stylesheet', href: 'https://emoji-css.afeld.me/emoji.css' },
       { rel: 'manifest', href: '/site.webmanifest' }
     ],

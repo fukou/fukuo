@@ -15,8 +15,7 @@
           href="https://drive.google.com/file/d/1jotonh9vo0OsdWY2vlC23Jse-_O_8rCg/view?usp=sharing"
           rel="noopener"
           target="_blank"
-          >Resume</a
-        >
+        >Resume</a>
       </div>
     </nav>
   </div>
@@ -43,7 +42,7 @@ nav {
     background-color: #f8a978;
     color: #fff;
     font-size: 1.05em;
-    font-family: 'Inter', sans-serif;
+    // font-family: 'Inter', sans-serif;
     text-decoration: none;
 
     &:hover {
@@ -65,7 +64,7 @@ nav {
 
     li {
       font-size: 1.25em;
-      font-family: 'Inter', sans-serif;
+      // font-family: 'Inter', sans-serif;
 
       & + li {
         margin-left: 2.5rem;

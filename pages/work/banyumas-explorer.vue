@@ -116,7 +116,7 @@ export default {
 }
 
 .projects {
-  font-family: 'Inter', sans-serif;
+  // font-family: 'Inter', sans-serif;
 
   img {
     width: 100%;
@@ -152,7 +152,9 @@ export default {
     }
 
     li {
-      font-family: 'Herbert', 'Playfair Display', serif;
+      // font-family: 'Herbert', 'Playfair Display', serif;
+      font-family: 'DM Serif Display', serif;
+
       font-size: 2.5em;
 
       @media (max-width: 60rem) {
@@ -260,7 +262,8 @@ nav {
       font-size: 3em;
       margin-bottom: 0.5rem;
       font-weight: normal;
-      font-family: 'Herbert', 'Playfair Display', serif;
+      // font-family: 'Herbert', 'Playfair Display', serif;
+      font-family: 'DM Serif Display', serif;
 
       @media (max-width: 60rem) {
         font-size: 2.35em;

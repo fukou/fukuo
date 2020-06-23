@@ -25,12 +25,7 @@
     <header class="heading">
       <div class="heading__inner" data-aos="fade-up" data-aos-delay="600">
         <h1>Fukuo Themes</h1>
-        <a
-          class="go-to"
-          href="https://fukuo.tumblr.com/"
-          target="_blank"
-          rel="noopener"
-        >
+        <a class="go-to" href="https://fukuo.tumblr.com/" target="_blank" rel="noopener">
           fukuo.tumblr.com
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,29 +54,21 @@
         things. This blog also provides tumblr themes for public use in
         accordance with their platform's API and tutorials that are written by
         me.
-        <strong
-          >I have also designed a Tumblr theme for numerous clients all over the
-          world.</strong
-        >
+        <strong>
+          I have also designed a Tumblr theme for numerous clients all over the
+          world.
+        </strong>
       </div>
       <div class="information__type">
         <ul>
           <li>Blog, Web Development</li>
           <li>
-            <i
-              class="em em-spiral_calendar_pad"
-              aria-role="presentation"
-              aria-label
-            ></i>
+            <i class="em em-spiral_calendar_pad" aria-role="presentation" aria-label></i>
             2012 - Present
           </li>
         </ul>
       </div>
-      <svg
-        class="arrow"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 312.757 312.757"
-      >
+      <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312.757 312.757">
         <path
           fill="#010002"
           d="M244.062 184.792l-73.439 73.438V0h-28.484v258.247L68.69 184.792l-20.141 20.147 107.83 107.818 107.829-107.818z"
@@ -112,9 +99,7 @@
         blog exclusively to publish my creations.
       </p>
       <p>
-        <strong
-          >The name Fukuo comes from Fukuoka — Japan's 6th largest city.</strong
-        >
+        <strong>The name Fukuo comes from Fukuoka — Japan's 6th largest city.</strong>
         I decided to choose this username because it’s short and rather easy to
         remember. This blog has been my learning-source and I am grateful that
         it is quite popular in the community. I have written some
@@ -224,7 +209,9 @@ export default {
     }
 
     li {
-      font-family: 'Herbert', 'Playfair Display', serif;
+      // font-family: 'Herbert', 'Playfair Display', serif;
+      font-family: 'DM Serif Display', serif;
+
       font-size: 2.5em;
 
       @media (max-width: 60rem) {
@@ -255,7 +242,7 @@ export default {
 }
 
 .projects {
-  font-family: 'Inter', sans-serif;
+  // font-family: 'Inter', sans-serif;
 
   img {
     width: 100%;
@@ -340,7 +327,8 @@ nav {
       font-size: 3em;
       margin-bottom: 0.5rem;
       font-weight: normal;
-      font-family: 'Herbert', 'Playfair Display', serif;
+      // font-family: 'Herbert', 'Playfair Display', serif;
+      font-family: 'DM Serif Display', serif;
 
       @media (max-width: 60rem) {
         font-size: 2.35em;

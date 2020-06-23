@@ -25,12 +25,7 @@
     <header class="heading">
       <div class="heading__inner" data-aos="fade-up" data-aos-delay="600">
         <h1>G-MOOC</h1>
-        <a
-          class="go-to"
-          href="https://dev.gmooc.id/"
-          target="_blank"
-          rel="noopener"
-        >
+        <a class="go-to" href="https://dev.gmooc.id/" target="_blank" rel="noopener">
           dev.gmooc.id
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -68,20 +63,12 @@
         <ul>
           <li>Front-end Development, UI/UX</li>
           <li>
-            <i
-              class="em em-spiral_calendar_pad"
-              aria-role="presentation"
-              aria-label
-            ></i>
+            <i class="em em-spiral_calendar_pad" aria-role="presentation" aria-label></i>
             8 months
           </li>
         </ul>
       </div>
-      <svg
-        class="arrow"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 312.757 312.757"
-      >
+      <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312.757 312.757">
         <path
           fill="#010002"
           d="M244.062 184.792l-73.439 73.438V0h-28.484v258.247L68.69 184.792l-20.141 20.147 107.83 107.818 107.829-107.818z"
@@ -157,7 +144,7 @@ export default {
 }
 
 .projects {
-  font-family: 'Inter', sans-serif;
+  // font-family: 'Inter', sans-serif;
 
   img {
     width: 100%;
@@ -193,7 +180,9 @@ export default {
     }
 
     li {
-      font-family: 'Herbert', 'Playfair Display', serif;
+      // font-family: 'Herbert', 'Playfair Display', serif;
+      font-family: 'DM Serif Display', serif;
+
       font-size: 2.5em;
 
       @media (max-width: 60rem) {
@@ -301,7 +290,8 @@ nav {
       font-size: 3em;
       margin-bottom: 0.5rem;
       font-weight: normal;
-      font-family: 'Herbert', 'Playfair Display', serif;
+      // font-family: 'Herbert', 'Playfair Display', serif;
+      font-family: 'DM Serif Display', serif;
 
       @media (max-width: 60rem) {
         font-size: 2.35em;

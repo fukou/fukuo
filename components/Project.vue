@@ -177,7 +177,7 @@ export default {
 
       a {
         color: inherit;
-        font-weight: 800;
+        font-weight: 700;
         font-size: 1.85em;
 
         @media (max-width: 60rem) {
@@ -202,7 +202,7 @@ export default {
       }
 
       .type {
-        font-family: 'Inter', sans-serif;
+        // font-family: 'Inter', sans-serif;
         color: #888;
       }
     }
@@ -216,7 +216,7 @@ export default {
     background-color: #fff;
     border: 2px solid #444;
     padding: 4.5rem 5rem 3rem 5rem;
-    font-family: 'Inter', sans-serif;
+    // font-family: 'Inter', sans-serif;
 
     // box-shadow: 12px 12px #eaddcf, 25px 25px rgba(209, 158, 125, 1);
 
@@ -254,7 +254,9 @@ export default {
     }
 
     @media (max-width: 60rem) {
-      margin-top: -8rem;
+      margin-top: -8.5rem;
+      margin-left: -0.25rem;
+      margin-right: 0.25rem;
       padding: 3rem 2.5rem;
       box-shadow: none;
     }

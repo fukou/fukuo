@@ -82,32 +82,38 @@ footer {
   padding: 4rem 2rem 12rem 2rem;
 
   @media (max-width: 60rem) {
-    padding: 2rem 2rem 4.5rem 2rem;
+    padding: 1.2rem 1.2rem 4.5rem 1.2rem;
 
     font-size: 14px;
   }
 
   .links-mobile {
     padding-bottom: 1.75rem;
-    border-bottom: 1px solid #ccc;
+    // border-bottom: 1px solid #ccc;
 
     @media (min-width: 60rem) {
       display: none;
     }
 
     ul {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-around;
+      // display: flex;
+      // flex-wrap: wrap;
+      // align-items: center;
+      // justify-content: space-around;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
       list-style: none;
       padding: 0;
       margin: 0;
 
       li {
-        font-size: 1.45em;
-        font-family: 'Herbert', 'Playfair Display', serif;
-        margin: 0.5rem 0.85rem;
+        font-size: 1.65em;
+        // font-family: 'Herbert', 'Playfair Display', serif;
+        font-family: 'DM Serif Text', serif;
+        text-align: center;
+
+        // margin: 0.5rem 0.85rem;
 
         a {
           text-decoration: none;
@@ -144,7 +150,8 @@ footer {
 
       li {
         font-size: 6em;
-        font-family: 'Herbert', 'Playfair Display', serif;
+        // font-family: 'Herbert', 'Playfair Display', serif;
+        font-family: 'DM Serif Display', serif;
 
         margin-right: 5.5rem;
         transition: 0.5s;
@@ -185,12 +192,14 @@ footer {
 
   .email {
     font-size: 2.5em;
-    font-family: 'Herbert', 'Playfair Display', serif;
+    // font-family: 'Herbert', 'Playfair Display', serif;
+    font-family: 'DM Serif Display', serif;
+
     text-align: center;
     margin: 10rem auto 1rem auto;
 
     @media (max-width: 60rem) {
-      font-size: 1.5em;
+      font-size: 1.85em;
       margin: 3rem auto;
     }
 
@@ -207,7 +216,7 @@ footer {
 
   .credit {
     text-align: center;
-    font-family: 'Inter', sans-serif;
+    // font-family: 'Inter', sans-serif;
 
     a {
       color: currentColor;

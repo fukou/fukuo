@@ -37,35 +37,35 @@ export default {
 $t-duration: 800ms;
 $t-delay: 400ms;
 
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/Inter-Regular.woff2') format('woff2'),
-    url('/fonts/Inter-Regular.woff') format('woff');
-}
+// @font-face {
+//   font-family: 'Inter';
+//   src: url('/fonts/Inter-Regular.woff2') format('woff2'),
+//     url('/fonts/Inter-Regular.woff') format('woff');
+// }
 
-@font-face {
-  font-family: 'Inter';
-  font-weight: 600;
-  src: url('/fonts/Inter-Bold.woff2') format('woff2'),
-    url('/fonts/Inter-Bold.woff') format('woff');
-}
+// @font-face {
+//   font-family: 'Inter';
+//   font-weight: 600;
+//   src: url('/fonts/Inter-Bold.woff2') format('woff2'),
+//     url('/fonts/Inter-Bold.woff') format('woff');
+// }
 
-@font-face {
-  font-family: 'Inter';
-  font-weight: 800;
-  src: url('/fonts/Inter-ExtraBold.woff2') format('woff2'),
-    url('/fonts/Inter-ExtraBold.woff') format('woff');
-}
+// @font-face {
+//   font-family: 'Inter';
+//   font-weight: 800;
+//   src: url('/fonts/Inter-ExtraBold.woff2') format('woff2'),
+//     url('/fonts/Inter-ExtraBold.woff') format('woff');
+// }
 
-@font-face {
-  font-family: 'Herbert';
-  font-style: normal;
-  font-display: swap;
-  src: url('/fonts/Herbert.ttf') format('truetype');
-}
+// @font-face {
+//   font-family: 'Herbert';
+//   font-style: normal;
+//   font-display: swap;
+//   src: url('/fonts/Herbert.ttf') format('truetype');
+// }
 
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .smooth-vuebar {

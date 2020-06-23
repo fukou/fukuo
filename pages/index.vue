@@ -8,12 +8,10 @@
           <span class="outlined">Faiz.</span> I am a
           <span class="underlined">front-end web developer</span> who is
           passionate in building a good design and app that is accessible to
-          <span class="outlined">everyone</span>
-          <svg
-            class="arrow"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 312.757 312.757"
-          >
+          <span
+            class="outlined"
+          >everyone</span>
+          <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312.757 312.757">
             <path
               fill="rgb(32, 45, 66)"
               d="M244.062 184.792l-73.439 73.438V0h-28.484v258.247L68.69 184.792l-20.141 20.147 107.83 107.818 107.829-107.818z"
@@ -82,7 +80,9 @@ export default {
 
 header {
   font-size: 2.5em;
-  font-family: 'Herbert', 'Playfair Display', serif;
+  // font-family: 'Herbert', 'Playfair Display', serif;
+  font-family: 'DM Serif Display', serif;
+
   color: rgb(32, 45, 66);
   line-height: 1.75;
   letter-spacing: -1px;
