@@ -272,7 +272,7 @@ export default {
       }
 
       @media (max-width: 60rem) {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
       }
     }
   }
