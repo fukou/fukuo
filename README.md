@@ -22,6 +22,6 @@ $ npm run generate
 
 ## Credits
 - Built with [Nuxt.js](https://nuxtjs.org). 
-- Fonts used are [Herbert](https://www.behance.net/gallery/80371811/Herbert-font-free-regular) and [Inter UI](https://rsms.me/inter/)
+- Fonts used are [DM Sans](https://fonts.google.com/specimen/DM+Sans?query=DM) and [IDM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display?query=DM)
 - Custom Cursor by [Hermanwikner](https://github.com/hermanwikner/vue-custom-cursor)
 - Animation library (AOS) by [Michalsnik](https://github.com/michalsnik/aos)
