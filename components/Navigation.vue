@@ -5,9 +5,9 @@
         <li>
           <nuxt-link to="/">Home</nuxt-link>
         </li>
-        <!-- <li>
+        <li>
           <nuxt-link to="/about">About</nuxt-link>
-        </li>-->
+        </li>
       </ul>
       <div class="go-to-resume">
         <a

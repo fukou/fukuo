@@ -38,9 +38,12 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet'
+          'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&family=DM+Serif+Text&display=swap'
       },
-      { rel: 'stylesheet', href: 'https://emoji-css.afeld.me/emoji.css' },
+      {
+        rel: 'stylesheet',
+        href: 'https://unpkg.com/emoji.css/dist/emoji.min.css'
+      },
       { rel: 'manifest', href: '/site.webmanifest' }
     ],
     script: [
