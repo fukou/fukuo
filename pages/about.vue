@@ -91,6 +91,10 @@ export default {
       font-size: 2.5em;
       font-family: 'DM Serif Display', serif;
       color: rgb(32, 45, 66);
+
+      @media (max-width: 60rem) {
+        font-size: 2rem;
+      }
     }
   }
 }

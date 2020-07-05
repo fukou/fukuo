@@ -181,7 +181,7 @@ export default {
         font-size: 1.85em;
 
         @media (max-width: 60rem) {
-          font-size: 1.5em;
+          font-size: 1.15em;
         }
       }
 
@@ -216,6 +216,7 @@ export default {
     background-color: #fff;
     border: 2px solid #444;
     padding: 4.5rem 5rem 3rem 5rem;
+
     // font-family: 'Inter', sans-serif;
 
     // box-shadow: 12px 12px #eaddcf, 25px 25px rgba(209, 158, 125, 1);
@@ -257,7 +258,7 @@ export default {
       margin-top: -8.5rem;
       margin-left: -0.25rem;
       margin-right: 0.25rem;
-      padding: 3rem 2.5rem;
+      padding: 2.5rem 2rem;
       box-shadow: none;
     }
 
