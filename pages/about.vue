@@ -15,8 +15,8 @@
           </p>
 
           <p>
-            I currently work remotely at
-            <span class="outlined">SoftwareSeni</span> and I code (for fun), read and draw in my free time to relieve my stress. My career started when I discovered Tumblr theme community where I make a free pre-build Tumblr themes for public use. You can visit the blog by clicking
+            I currently work at
+            <span class="outlined">SoftwareSeni</span> as a Front End Developer and I code (for fun), read and draw in my free time to relieve my stress. My career started when I discovered Tumblr theme community where I make a free pre-build Tumblr themes for public use. You can visit the blog by clicking
             <a
               href="https://fukuo.tumblr.com/"
               target="_blank"
@@ -70,17 +70,42 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container {
+  // background-color: rgb(32, 45, 66);
+  overflow-x: hidden;
+  padding: 0 2rem 8.5rem 2rem;
+
+  @media (max-width: 60rem) {
+    padding-bottom: 6rem;
+  }
+
+  &__inner {
+    margin: 5.5rem auto;
+    max-width: 55rem;
+
+    @media (max-width: 40rem) {
+      margin: 3.5rem auto;
+    }
+
+    header {
+      font-size: 2.5em;
+      font-family: 'DM Serif Display', serif;
+      color: rgb(32, 45, 66);
+    }
+  }
+}
+
 section {
   position: relative;
-  font-family: 'DM Serif Display', serif;
-  font-weight: lighter;
-  font-size: 1.5em;
+  // font-family: 'DM Serif Display', serif;
+  // font-weight: lighter;
+  font-size: 1.1em;
   margin-top: 1rem;
 
   color: #413c30;
 
   @media (max-width: 60rem) {
-    font-size: 1.15em;
+    font-size: 1em;
   }
 
   .outlined {
@@ -91,8 +116,8 @@ section {
 
   .small {
     margin-top: 2.5rem;
-    font-size: 0.65em;
-    font-family: 'DM Sans ', sans-serif;
+    font-size: 0.85em;
+    font-weight: bold;
   }
 
   .me {
@@ -146,6 +171,7 @@ section {
 
   a {
     color: rgb(32, 45, 66);
+    font-weight: bold;
   }
 }
 </style>

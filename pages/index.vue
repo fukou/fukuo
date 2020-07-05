@@ -55,9 +55,56 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.em---1 {
-  font-size: 0.6em;
-  margin-left: 1rem;
-  vertical-align: text-top;
+.container {
+  // background-color: rgb(32, 45, 66);
+  overflow-x: hidden;
+  padding: 0 2rem 8.5rem 2rem;
+
+  @media (max-width: 60rem) {
+    padding-bottom: 6rem;
+  }
+
+  &__inner {
+    margin: 5.5rem auto;
+    max-width: 55rem;
+
+    @media (max-width: 40rem) {
+      margin: 3.5rem auto;
+    }
+  }
+}
+
+header {
+  font-size: 2.5em;
+  // font-family: 'Herbert', 'Playfair Display', serif;
+  font-family: 'DM Serif Display', serif;
+
+  color: rgb(32, 45, 66);
+  line-height: 1.75;
+  letter-spacing: -1px;
+
+  @media (max-width: 60rem) {
+    font-size: 1.65em;
+  }
+
+  .underlined {
+    box-shadow: inset 0 -15px 0 #badfdb, 0 2px 0 #badfdb;
+  }
+
+  .outlined {
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(32, 45, 66);
+  }
+
+  .arrow {
+    display: block;
+    width: 3rem;
+    margin-top: 3.5rem;
+
+    @media (max-width: 60rem) {
+      width: 1.75rem;
+    }
+  }
 }
 </style>
