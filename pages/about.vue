@@ -126,9 +126,8 @@ section {
 
   .me {
     position: relative;
-    margin: 2.5rem 0 0 0;
+    margin: 3.65rem 0 0 0;
     border: 2px solid #444;
-    // padding: 1.5rem;
     background-color: #fff;
 
     img {
