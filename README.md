@@ -1,3 +1,5 @@
+![Image of Madotsuki](https://static.tumblr.com/5ojoydj/70eqs8a2c/ezgif.com-gif-maker__1_.gif)
+
 # fukuo
 
 > Source code for fukuo.design, a portfolio web for showcasing my work
