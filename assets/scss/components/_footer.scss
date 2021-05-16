@@ -1,0 +1,140 @@
+.footer {
+    padding: 4rem 2rem 0rem 2rem;
+  
+    @media (max-width: 60rem) {
+      padding: 1.2rem 2rem 0rem 2rem;
+  
+      font-size: 14px;
+    }
+  
+    &__mobile {
+      padding-bottom: 1.75rem;
+  
+      @media (min-width: 60rem) {
+        display: none;
+      }
+  
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+  
+        li {
+          font-size: 1.65em;
+          font-family: 'Argent Pixel', serif;
+          text-align: center;
+  
+          a {
+            text-decoration: none;
+            color:#111;
+          }
+        }
+      }
+    }
+
+  
+    &__marquee {
+      @media (max-width: 60rem) {
+        display: none;
+      }
+    }
+
+    &__inner {
+      position: relative;
+      width: 100%;
+      display: flex;
+      color: white;
+
+      & > * {
+        white-space: nowrap;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+      }
+
+      li {
+        font-size: 3.75em;
+        font-family: var(--heading-font);
+
+        margin-right: 5.5rem;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+
+        a {
+          position: relative;
+          text-decoration: none;
+          transition: 0.5s;
+          -webkit-transition: 0.5s;
+          color:#111;
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 4px;
+            background-color: #111;
+            left: 0;
+            bottom: -20px;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+          }
+
+          &:hover:before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  
+    &__email {
+      font-size: 1.5em;
+  
+      text-align: center;
+      margin: 10rem auto 1rem auto;
+  
+      @media (max-width: 60rem) {
+        margin: 3rem auto;
+      }
+  
+      p {
+        font-weight: bold;
+      }
+  
+      a {
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.65em;
+        font-family: var(--heading-font);
+        font-weight: 400;
+        color: #111;
+
+        @media (max-width:60rem) {
+          font-size: 1.25rem;
+        }
+
+        svg {
+          margin-right:1rem;
+          width:32px;
+          height:32px;
+        }
+      }
+    }
+
+    &__bg {
+      background-image: url('~/assets/img/topography.png');
+      background-repeat: repeat;
+
+      margin:8.5rem -2rem 0 -2rem;
+      padding:0 0 10rem 0;
+
+      @media (max-width: 60rem) {
+        margin-top: 4.5rem;
+      }
+    }
+  }

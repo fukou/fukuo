@@ -1,7 +1,7 @@
 <template>
-  <footer>
-    <div class="marquee">
-      <div class="inner">
+  <footer class="footer">
+    <div class="footer__marquee">
+      <div class="footer__inner">
         <ul>
           <li>
             <a href="https://twitter.com/_fukuo">Twitter</a>
@@ -15,14 +15,11 @@
           <li>
             <a href="https://codepen.io/fukuo">Codepen</a>
           </li>
-          <li>
-            <a href="https://instagram.com/_fukuo">Instagram</a>
-          </li>
         </ul>
       </div>
     </div>
 
-    <div class="links-mobile">
+    <div class="footer__mobile">
       <ul>
         <li>
           <a href="https://twitter.com/_fukuo">Twitter</a>
@@ -33,32 +30,36 @@
         <li>
           <a href="https://github.com/fukou">Github</a>
         </li>
-        <!-- <li>
-          <a href="https://codepen.io/fukuo">Codepen</a>
-        </li>-->
         <li>
-          <a href="https://instagram.com/_fukuo">Instagram</a>
+          <a href="https://codepen.io/fukuo">Codepen</a>
         </li>
       </ul>
     </div>
 
-    <div class="email">
-      <p>
-        Say hello
-        <!-- <i class="em em-wave" aria-role="presentation" aria-label="WAVING HAND SIGN"></i> -->
-      </p>
-      <a href="mailto:faizichsanj@gmail.com">faizichsanj@gmail.com</a>
+    <div class="footer__email">
+      <p>Get in touch</p>
+      <VueSparkles color="#DE3E3E">
+        <a href="mailto:faizichsanj@gmail.com">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4 4H20H22V6V12H20V6H4V18H12V20H4H2V18V6V4H4ZM8 8H6V10H8V12H10V14H14V12H16V10H18V8H16V10H14V12H10V10H8V8ZM18 14H20V18H24V20H22V22H20V24H18V20H14V18H16V16H18V14Z"
+              fill="black"
+            />
+          </svg>
+          faizichsanj@gmail.com</a
+        >
+      </VueSparkles>
     </div>
-    <!-- <div class="credit">
-      Copyright &copy; 2020 Faiz Ichsan Jaya. All rights reserved.
-      built using 
-      <a
-        class="links"
-        href="https://nuxtjs.org"
-      >Nuxt.js</a>
-      and hosted on
-      <a class="links" href="https://zeit.co/">Zeit NOW</a>
-    </div>-->
+
+    <div class="footer__bg"></div>
   </footer>
 </template>
 
@@ -68,160 +69,6 @@ import marquee from '../plugins/marquee'
 export default {
   mounted() {
     marquee()
-  }
+  },
 }
 </script>
-
-<style lang="scss" scoped>
-.em-wave {
-  font-size: 0.65em;
-  margin-left: 0.5rem;
-}
-
-footer {
-  padding: 4rem 2rem 12rem 2rem;
-
-  @media (max-width: 60rem) {
-    padding: 1.2rem 1.2rem 4.5rem 1.2rem;
-
-    font-size: 14px;
-  }
-
-  .links-mobile {
-    padding-bottom: 1.75rem;
-    // border-bottom: 1px solid #ccc;
-
-    @media (min-width: 60rem) {
-      display: none;
-    }
-
-    ul {
-      // display: flex;
-      // flex-wrap: wrap;
-      // align-items: center;
-      // justify-content: space-around;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.25rem;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-      li {
-        font-size: 1.65em;
-        // font-family: 'Herbert', 'Playfair Display', serif;
-        font-family: 'DM Serif Text', serif;
-        text-align: center;
-
-        // margin: 0.5rem 0.85rem;
-
-        a {
-          text-decoration: none;
-          -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-          -webkit-text-stroke-width: 1px;
-          -webkit-text-stroke-color: rgb(32, 45, 66);
-        }
-      }
-    }
-  }
-
-  @media (max-width: 60rem) {
-    .marquee {
-      display: none;
-    }
-  }
-
-  .marquee {
-    .inner {
-      position: relative;
-      width: 100%;
-      display: flex;
-      color: white;
-
-      & > * {
-        white-space: nowrap;
-      }
-
-      ul {
-        display: flex;
-        align-items: center;
-        list-style: none;
-      }
-
-      li {
-        font-size: 6em;
-        // font-family: 'Herbert', 'Playfair Display', serif;
-        font-family: 'DM Serif Display', serif;
-
-        margin-right: 5.5rem;
-        transition: 0.5s;
-        -webkit-transition: 0.5s;
-
-        a {
-          position: relative;
-          text-decoration: none;
-          transition: 0.5s;
-          -webkit-transition: 0.5s;
-          -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-          -webkit-text-stroke-width: 2px;
-          -webkit-text-stroke-color: rgb(32, 45, 66);
-
-          &:before {
-            content: '';
-            position: absolute;
-            width: 0%;
-            height: 8px;
-            background-color: rgb(32, 45, 66);
-            left: 0;
-            bottom: -20px;
-            transition: 0.5s;
-            -webkit-transition: 0.5s;
-          }
-
-          &:hover:before {
-            width: 100%;
-          }
-
-          &:hover {
-            -webkit-text-fill-color: rgb(32, 45, 66);
-          }
-        }
-      }
-    }
-  }
-
-  .email {
-    font-size: 2.5em;
-    // font-family: 'Herbert', 'Playfair Display', serif;
-    font-family: 'DM Serif Display', serif;
-
-    text-align: center;
-    margin: 10rem auto 1rem auto;
-
-    @media (max-width: 60rem) {
-      font-size: 1.85em;
-      margin: 3rem auto;
-    }
-
-    p {
-      -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-      -webkit-text-stroke-width: 1.15px;
-      -webkit-text-stroke-color: #111;
-    }
-
-    a {
-      color: rgb(32, 45, 66);
-    }
-  }
-
-  .credit {
-    text-align: center;
-    // font-family: 'Inter', sans-serif;
-
-    a {
-      color: currentColor;
-      font-weight: 800;
-    }
-  }
-}
-</style>

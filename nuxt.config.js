@@ -1,9 +1,4 @@
 export default {
-  mode: 'universal',
-  /*
-   ** Headers of the page
-   */
-
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -36,9 +31,14 @@ export default {
       },
       { rel: 'stylesheet', href: 'https://unpkg.com/aos@next/dist/aos.css' },
       {
+        rel: 'preconnect',
+        href:
+          'https://fonts.gstatic.com'
+      },
+      {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&family=DM+Serif+Text&display=swap'
+          'https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap'
       },
       {
         rel: 'stylesheet',
@@ -59,25 +59,16 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ["~/assets/scss/style.scss"],
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
     {
-      src: '~/plugins/smoothScroll.js',
-      mode: 'client'
-      // ssr: false
-    },
-    // {
-    //   src: '~/plugins/locomotive.js',
-    //   ssr: false
-    // },
-    {
       src: '~/plugins/aos.js',
-      // mode: 'client'
       ssr: false
-    }
+    },
+    '~/plugins/vue-sparkles.js'
   ],
   /*
    ** Nuxt.js dev-modules
@@ -86,7 +77,12 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', 'vue-scrollto/nuxt'],
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
+    'vue-scrollto/nuxt'
+  ],
   /*
    ** Build configuration
    */
@@ -94,6 +90,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 }
