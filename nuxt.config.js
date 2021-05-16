@@ -69,7 +69,8 @@ export default {
       src: '~/plugins/aos.js',
       ssr: false
     },
-    '~/plugins/vue-sparkles.js'
+    '~/plugins/vue-sparkles.js',
+    '~/plugins/datocms'
   ],
   /*
    ** Nuxt.js dev-modules
