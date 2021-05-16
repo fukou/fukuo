@@ -46,7 +46,10 @@
           <nuxt-link to="/about">About</nuxt-link>
         </li>
         <li class="resume">
-          <a href="#"
+          <a
+            href="https://www.notion.so/fukuo/Resume-55ff529903624b40920227a38eee902f#28683c8e08834c689488ad71c5fe4cc1"
+            target="_blank"
+            rel="noopener noreferrer"
             >Resume
             <svg
               width="24"
