@@ -1,0 +1,125 @@
+.container {
+    &--detail {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+
+        @media (max-width:60rem) {
+            // padding:0 2rem;
+        }
+    }
+
+    &__detail {
+        &--title {
+            display:flex;
+            align-items: center;
+            width:100%;
+
+            border-bottom:3px solid #111;
+            padding-bottom:1.45rem;
+        }
+
+        &--live {
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                width:50px;
+                height:50px;
+                color:#111;
+
+                border-radius: 50%;
+                transform: rotate(-45deg);
+            }
+        }
+
+        &--heading {
+            flex:1;
+            padding:0 1.5rem;
+
+            h1 {
+                font-family: var(--heading-font);
+                font-weight: 500;
+            }
+        }
+
+        &--type {
+            display: grid;
+            grid-template-columns:1fr 1fr auto;
+            gap:2rem;
+
+            @media (max-width:60rem) {
+                grid-template-columns: 1fr;
+                gap:0rem;
+            }
+
+            margin-bottom:3.5rem;
+
+            > div {
+                padding:0rem 1.35rem;
+                margin-top:1.5rem;
+
+                &:first-child {
+                    padding-left: 0rem;
+                }
+
+                @media (max-width:60rem) {
+                    padding:1rem 0;
+                    margin-top:0.5rem;
+                }
+
+                + div {
+                    border-left:3px solid #111;
+
+                    @media (max-width:60rem) {
+                        border-top:3px solid #111;
+                        border-left: 0;
+                    }
+                }
+                
+
+                h2 {
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                    font-family: var(--heading-font);
+                }
+            }
+        }
+
+        &--overview {
+            position: relative;
+            border:3px solid #111;
+            padding:2.5rem;
+            background-color:white;
+            
+            box-shadow:15px 15px 0 -1px white,15px 15px 0 1px #111;
+
+            margin-bottom: 7.5rem;
+            
+            h2 {
+                font-size:1.75rem;
+                font-family: var(--heading-font);
+                font-weight: 400;
+
+                padding-bottom: 1rem;
+                margin-bottom: 1.5rem;
+                border-bottom: 3px solid #111;
+            }
+
+            p + p {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    &__images {
+        position: relative;
+
+        width:100%;
+
+        img {
+            width:100%;
+        }
+    }
+}
