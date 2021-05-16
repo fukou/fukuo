@@ -32,7 +32,7 @@
             </div>
             <div class="container__detail--heading">
               <h1>{{ work.title }}</h1>
-              <p>Subtitle here</p>
+              <p>{{ work.subtitle }}</p>
             </div>
           </div>
 
@@ -55,10 +55,13 @@
           <!--  -->
           <div class="container__detail--overview">
             <h2>Overview</h2>
-            <datocms-structured-text
-              :data="work.overview.value"
-              :renderBlock="renderBlock"
-            />
+            <div v-if="work.overview.value">
+              <datocms-structured-text
+                :data="work.overview.value"
+                :renderBlock="renderBlock"
+              />
+            </div>
+            <div v-else>No description</div>
           </div>
         </section>
       </div>
@@ -85,6 +88,7 @@ export default {
           work(filter: { slug: { eq: $slug } }) {
             id
             title
+            subtitle
             slug
             date
             role
