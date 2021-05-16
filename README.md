@@ -24,6 +24,6 @@ $ npm run generate
 
 ## Credits
 - Built with [Nuxt.js](https://nuxtjs.org). 
-- Fonts used are [DM Sans](https://fonts.google.com/specimen/DM+Sans?query=DM) and [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display?query=DM)
+- Heading font by [Connary Fagen](https://www.behance.net/gallery/74143595/Argent-Pixel-CF-lo-fi-bitmap-serif-typeface)
 - Custom Cursor by [Hermanwikner](https://github.com/hermanwikner/vue-custom-cursor)
 - Animation library (AOS) by [Michalsnik](https://github.com/michalsnik/aos)
