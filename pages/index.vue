@@ -133,7 +133,8 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: '/social.png',
+          content:
+            'https://www.datocms-assets.com/48251/1621256350-social-preview.png',
         },
         { name: 'twitter:card', content: 'summary_large_image' },
         {
@@ -154,7 +155,8 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: '/social.png',
+          content:
+            'https://www.datocms-assets.com/48251/1621256350-social-preview.png',
         },
       ],
     }
