@@ -101,6 +101,9 @@ export default {
   head() {
     return {
       title: 'Faiz Ichsan Jaya | Portfolio Website',
+      bodyAttrs: {
+        class: 'home',
+      },
     }
   },
 }

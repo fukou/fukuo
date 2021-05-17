@@ -4,12 +4,18 @@
         padding-right: 0;
         padding-bottom: 0;
 
-        @media (max-width:60rem) {
-            // padding:0 2rem;
+        > div > div {
+            @media (max-width:60rem) {
+                padding:0 2rem;
+            }
         }
     }
 
     &__detail {
+        @media (max-width:60rem) {
+            padding:0 2rem;
+        }
+
         &--title {
             display:flex;
             align-items: center;
@@ -96,6 +102,10 @@
             box-shadow:15px 15px 0 -1px white,15px 15px 0 1px #111;
 
             margin-bottom: 7.5rem;
+
+            @media (max-width:60rem) {
+                box-shadow:4px 4px 0 -1px white,4px 4px 0 1px #111;
+            }
             
             h2 {
                 font-size:1.75rem;

@@ -74,8 +74,8 @@
 
 <script>
 import Navigation from '~/components/Navigation.vue'
-
-import { request, gql } from '~/lib/datocms'
+import { toHead } from 'vue-datocms'
+import { request, gql, seoMetaTagsFields } from '~/lib/datocms'
 
 export default {
   components: {
@@ -85,7 +85,15 @@ export default {
     const data = await request({
       query: gql`
         query BlogPostQuery($slug: String!) {
+          site: _site {
+            favicon: faviconMetaTags {
+              ...seoMetaTagsFields
+            }
+          }
           work(filter: { slug: { eq: $slug } }) {
+            seo: _seoMetaTags {
+              ...seoMetaTagsFields
+            }
             id
             title
             subtitle
@@ -104,6 +112,7 @@ export default {
             }
           }
         }
+        ${seoMetaTagsFields}
       `,
       variables: {
         slug: params.id,
@@ -143,11 +152,10 @@ export default {
     this.applyColor()
   },
   head() {
-    return {
-      bodyAttrs: {
-        class: 'about',
-      },
+    if (!this.ready) {
+      return
     }
+    return toHead(this.work.seo, this.site.favicon)
   },
 }
 </script>

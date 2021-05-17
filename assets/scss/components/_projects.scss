@@ -32,9 +32,11 @@
         }
       }
 
-      &:hover {
-        > * {
-          opacity:0.25;
+      @media (min-width:60rem) {
+        &:hover {
+          > * {
+            opacity:0.25;
+          }
         }
       }
   
