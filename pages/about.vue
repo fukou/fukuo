@@ -2,10 +2,10 @@
   <div>
     <main class="container container--about">
       <div class="container__inner">
-        <Navigation data-aos="fade-up" data-aos-delay="500" />
+        <Navigation data-aos="fade-in" data-aos-delay="500" />
         <section
           class="container__about"
-          data-aos="fade-up"
+          data-aos="fade-in"
           data-aos-delay="700"
         >
           <div class="container__about--inner">

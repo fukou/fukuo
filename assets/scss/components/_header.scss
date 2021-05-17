@@ -6,19 +6,34 @@ body {
           display: none;
         }
 
-        li.about {
-          display: block!important;
-          margin-right: auto;
-          a {
-            display: inline-flex;
-            align-items: center;
-            font-weight: bold;
+        li {
+          &.home { display: none;}
+          &.about {
+            display: block!important;
+            margin-right: auto;
+            a {
+              display: inline-flex;
+              align-items: center;
+              font-weight: bold;
 
-            svg {
-              margin-right: 0.75rem;
+              svg {
+                margin-right: 0.75rem;
+              }
             }
           }
+          &.resume {
+            a {
+              &:hover {
+                background-color:whitesmoke;
+                color:#111;
+              }
+            }
+          }
+          a { 
+            color:whitesmoke;  
+          }
         }
+
       }
     }
   }
@@ -99,7 +114,7 @@ nav {
             display:inline-flex;
             align-items:center;
             font-size: 0.85em;
-            border: 3px solid #111;
+            border: 3px solid currentColor;
             padding: 0.5rem 0.85rem 0.5rem 1.25rem;
             transition: 0.5s;
             color: #111;

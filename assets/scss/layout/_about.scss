@@ -5,6 +5,7 @@
 
     &__about {
         position: relative;
+        color:whitesmoke;
 
         &::after {
             content:'';
@@ -36,7 +37,6 @@
                 display: none;
             }
         }
-
 
         h2 {
             margin-bottom: 2rem;

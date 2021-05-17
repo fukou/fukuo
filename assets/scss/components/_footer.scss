@@ -138,3 +138,21 @@
       }
     }
   }
+
+  body.about {
+    .footer {
+      * {
+        color:whitesmoke;
+      }
+
+      &__inner {
+        ul li a::before {
+          background-color: whitesmoke;
+        }
+      }
+      &__bg {
+        background-image:none;
+        background-repeat: repeat;
+      }
+    }
+  }

@@ -51,7 +51,7 @@
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M4 4H20H22V6V12H20V6H4V18H12V20H4H2V18V6V4H4ZM8 8H6V10H8V12H10V14H14V12H16V10H18V8H16V10H14V12H10V10H8V8ZM18 14H20V18H24V20H22V22H20V24H18V20H14V18H16V16H18V14Z"
-              fill="black"
+              fill="currentColor"
             />
           </svg>
           faizichsanj@gmail.com</a
