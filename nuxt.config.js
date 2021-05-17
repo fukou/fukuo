@@ -13,8 +13,6 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || ''
       },
-      { property: "og:site_name", content: "Redfern Dev" },
-      { hid: "og:type", property: "og:type", content: "website" },
       {
         hid: "og:url",
         property: "og:url",
@@ -23,7 +21,7 @@ export default {
       {
         hid: "og:title",
         property: "og:title",
-        content: "Faiz Ichsan Jaya | Portfolio Site",
+        content: "Faiz Ichsan Jaya | Portfolio Website",
       },
       {
         hid: "og:description",
@@ -35,10 +33,6 @@ export default {
         property: "og:image",
         content: "/social.png",
       },
-      { property: "og:image:width", content: "740" },
-      { property: "og:image:height", content: "300" },
-
-      { name: "twitter:site", content: "@_fukuo" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         hid: "twitter:url",
@@ -48,7 +42,7 @@ export default {
       {
         hid: "twitter:title",
         name: "twitter:title",
-        content: "Faiz Ichsan Jaya | Portfolio Site",
+        content: "Faiz Ichsan Jaya | Portfolio Website",
       },
       {
         hid: "twitter:description",
