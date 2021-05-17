@@ -47,7 +47,7 @@
         </li>
         <li class="resume">
           <a
-            href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9d872f9f-43bf-4e42-b55b-ce26020a2fe6/Faiz_Ichsan_Jaya_%28Resume_-_2021%29.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210516%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210516T055925Z&X-Amz-Expires=86400&X-Amz-Signature=503ed56c0d606aef167af8da691331ed32bd9fd2243280407d50f07e92b07be5&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Faiz%2520Ichsan%2520Jaya%2520%28Resume%2520-%25202021%29.pdf%22"
+            href="Faiz Ichsan J-Resume-2021.pdf"
             target="_blank"
             rel="noopener noreferrer"
             >Resume
