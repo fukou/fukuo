@@ -1,4 +1,7 @@
 .container {
+    &--about {
+        padding-bottom: 0;
+    }
 
     &__about {
         position: relative;
@@ -20,17 +23,8 @@
             margin-bottom: 1rem;
         }
 
-        &--img {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            margin-top: 4rem;
-
-            img {
-                grid-column: 1/4;
-                grid-row: 1/4;
-                border-radius: 8px;
-            }
+        &--image {
+            margin-top:3.5rem;
         }
 
         &--svg {
@@ -49,23 +43,28 @@
             color:var(--accent-color-four);
         }
 
-        p + p {
-            margin-top:1rem;
-        }
-
-        a {
-            color:currentColor;
-            font-weight: bold;
-        }
-
         h3 {
             margin-top: 3rem;
         }
 
+        p + p {
+            margin-top:1rem;
+        }
+
+        a[href] {
+            color:currentColor;
+            font-weight: bold;
+        }
+       
         ul, ol {
             margin:0;
             padding:0;
             list-style: none;
+        }
+
+        img {
+            border-radius:8px;
+            overflow: hidden;
         }
     }
 }
