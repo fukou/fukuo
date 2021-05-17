@@ -65,7 +65,9 @@
 import Navigation from '~/components/Navigation.vue'
 import Footer from '~/components/Footer.vue'
 
-import { request, gql } from '~/lib/datocms'
+import { request, gql, seoMetaTagsFields } from '~/lib/datocms'
+import { toHead } from 'vue-datocms'
+
 import hover from '~/plugins/hover'
 
 export default {
@@ -73,10 +75,20 @@ export default {
     Navigation,
     Footer,
   },
+  data() {
+    return {
+      title: 'Faiz Ichsan Jaya | Portfolio Website',
+    }
+  },
   async asyncData({ params }) {
     const data = await request({
       query: gql`
         {
+          site: _site {
+            favicon: faviconMetaTags {
+              ...seoMetaTagsFields
+            }
+          }
           works: allWorks(orderBy: _firstPublishedAt_DESC) {
             id
             title
@@ -90,6 +102,7 @@ export default {
             }
           }
         }
+        ${seoMetaTagsFields}
       `,
     })
     return { ready: !!data, ...data }
@@ -100,7 +113,50 @@ export default {
   },
   head() {
     return {
-      title: 'Faiz Ichsan Jaya | Portfolio Website',
+      title: this.title,
+      meta: [
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://fukuo.design',
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Faiz Ichsan Jaya | Portfolio Website',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'A portfolio website for showcasing my works and designs.',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: '/social.png',
+        },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        {
+          hid: 'twitter:url',
+          name: 'twitter:url',
+          content: 'https://fukuo.design',
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'Faiz Ichsan Jaya | Portfolio Website',
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'A portfolio website for showcasing my works and designs.',
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: '/social.png',
+        },
+      ],
     }
   },
 }
