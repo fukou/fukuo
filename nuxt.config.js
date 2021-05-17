@@ -1,6 +1,9 @@
 export default {
   target: 'static',
   head: {
+    htmlAttrs: {
+      lang: "en",
+    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -9,7 +12,54 @@ export default {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
-      }
+      },
+      { property: "og:site_name", content: "Redfern Dev" },
+      { hid: "og:type", property: "og:type", content: "website" },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://fukuo.design",
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "Faiz Ichsan Jaya | Portfolio Site",
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: "A portfolio website for showcasing my works and designs.",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "/social.png",
+      },
+      { property: "og:image:width", content: "740" },
+      { property: "og:image:height", content: "300" },
+
+      { name: "twitter:site", content: "@_fukuo" },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        hid: "twitter:url",
+        name: "twitter:url",
+        content: "https://fukuo.design",
+      },
+      {
+        hid: "twitter:title",
+        name: "twitter:title",
+        content: "Faiz Ichsan Jaya | Portfolio Site",
+      },
+      {
+        hid: "twitter:description",
+        name: "twitter:description",
+        content: "A portfolio website for showcasing my works and designs.",
+      },
+      {
+        hid: "twitter:image",
+        name: "twitter:image",
+        content: "/social.png",
+      },
     ],
     link: [
       {
