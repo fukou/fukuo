@@ -13,6 +13,49 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || ''
       },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://fukuo.design',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Faiz Ichsan Jaya | Portfolio Website',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'A portfolio website for showcasing my works and designs.',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content:
+          'https://www.datocms-assets.com/48251/1621256350-social-preview.png',
+      },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://fukuo.design',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Faiz Ichsan Jaya | Portfolio Website',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'A portfolio website for showcasing my works and designs.',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content:
+          'https://www.datocms-assets.com/48251/1621256350-social-preview.png',
+      },
     ],
     link: [
       {
@@ -59,7 +102,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#c9c9c9' },
   /*
    ** Global CSS
    */
