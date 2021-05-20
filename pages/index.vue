@@ -66,8 +66,6 @@ import Navigation from '~/components/Navigation.vue'
 import Footer from '~/components/Footer.vue'
 
 import { request, gql, seoMetaTagsFields } from '~/lib/datocms'
-import { toHead } from 'vue-datocms'
-
 import hover from '~/plugins/hover'
 
 export default {
@@ -89,7 +87,7 @@ export default {
               ...seoMetaTagsFields
             }
           }
-          works: allWorks(orderBy: _firstPublishedAt_DESC) {
+          works: allWorks(orderBy: _firstPublishedAt_ASC) {
             id
             title
             summary
