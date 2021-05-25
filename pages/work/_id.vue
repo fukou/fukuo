@@ -87,17 +87,21 @@
             topSpacing="60"
             class="container__details--sidebar"
           >
-            <ul>
-              <li v-for="(link, index) in work.asset" :key="index">
-                <a
-                  :href="
-                    '#' +
-                    link.responsiveImage.alt.toLowerCase().replace(/ /g, '')
-                  "
-                  >{{ link.responsiveImage.alt }}</a
-                >
-              </li>
-            </ul>
+            <h2>Table of contents</h2>
+            <scrollactive>
+              <ul>
+                <li v-for="(link, index) in work.asset" :key="index">
+                  <a
+                    class="scrollactive-item"
+                    :href="
+                      '#' +
+                      link.responsiveImage.alt.toLowerCase().replace(/ /g, '')
+                    "
+                    >{{ link.responsiveImage.alt }}</a
+                  >
+                </li>
+              </ul>
+            </scrollactive>
           </vue-sticky-sidebar>
           <section class="container__details--img">
             <figure v-for="(image, index) in work.asset" :key="index">

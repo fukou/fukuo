@@ -24,6 +24,7 @@
     "vue-datocms": "^1.0.1",
     "vue-demi": "^0.7.5",
     "vue-meta": "^2.4.0",
+    "vue-scrollactive": "^0.9.3",
     "vue-scrollto": "^2.17.1",
     "vue-sparkles": "^1.1.0",
     "vue-sticky-sidebar": "^1.0.5"
