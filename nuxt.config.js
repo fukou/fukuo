@@ -1,5 +1,8 @@
 export default {
   target: 'static',
+  generate: {
+    fallback: true
+  },
   head: {
     htmlAttrs: {
       lang: "en",
