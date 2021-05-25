@@ -127,11 +127,30 @@
     }
 
     &__bg {
-      background-image: url('~/assets/img/topography.png');
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-image: url('~/assets/img/pattern-dot.png');
       background-repeat: repeat;
+      background-size: contain;
 
       margin:8.5rem -2rem 0 -2rem;
-      padding:0 0 10rem 0;
+      padding:3.5rem 2rem;
+
+      &--credit {
+        span {
+          background-color:var(--accent-color-one);
+          color:rgba(#fff, 0.75);
+
+          padding:0.65rem 1rem;
+          border-radius: 30px;
+
+          @media (max-width: 60rem) {
+            font-size: 0.75rem;
+          }
+        }
+      }
 
       @media (max-width: 60rem) {
         margin-top: 4.5rem;
@@ -151,8 +170,18 @@
         }
       }
       &__bg {
-        background-image:none;
-        background-repeat: repeat;
+        filter: invert(1);
+
+        &--credit {
+          span {
+            background-color: whitesmoke;
+            color:var(--link-color);
+
+            strong {
+              color:var(--link-color);
+            }
+          }
+        }
       }
     }
   }

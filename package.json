@@ -24,7 +24,8 @@
     "vue-demi": "^0.7.5",
     "vue-meta": "^2.4.0",
     "vue-scrollto": "^2.17.1",
-    "vue-sparkles": "^1.1.0"
+    "vue-sparkles": "^1.1.0",
+    "vue-sticky-sidebar": "^1.0.5"
   },
   "devDependencies": {
     "eslint-config-prettier": "^4.1.0",

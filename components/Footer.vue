@@ -59,7 +59,16 @@
       </VueSparkles>
     </div>
 
-    <div class="footer__bg"></div>
+    <div class="footer__bg">
+      <div class="footer__bg--credit">
+        <span
+          ><strong
+            >Faiz Ichsan Jaya &copy; {{ new Date().getFullYear() }}</strong
+          >
+          • Built with Nuxt.js & Dato CMS
+        </span>
+      </div>
+    </div>
   </footer>
 </template>
 

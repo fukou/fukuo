@@ -118,6 +118,7 @@ export default {
       src: '~/plugins/aos.js',
       ssr: false
     },
+    { src: '~/plugins/vue-stickysidebar.js', mode: 'client' },
     '~/plugins/vue-sparkles.js',
     '~/plugins/datocms'
   ],

@@ -44,7 +44,7 @@
             </div>
             <div>
               <h2>Year</h2>
-              <p>{{ work.date }}</p>
+              <p>{{ work.date.slice(0, 4) }}</p>
             </div>
             <div>
               <h2>Roles</h2>
@@ -66,7 +66,94 @@
         </section>
       </div>
       <div class="container__images">
-        <img :src="work.coverImage.url" alt="" />
+        <figure>
+          <datocms-image :data="work.coverImage.responsiveImage" />
+          <figcaption v-if="work.coverImage.responsiveImage.alt">
+            {{ work.coverImage.responsiveImage.alt }}
+          </figcaption>
+        </figure>
+      </div>
+      <div class="container__details">
+        <div class="container__details--top">
+          <h2>Product goal</h2>
+          <p>
+            To create an e-learning platform that is interesting, unique and
+            interactive by giving the learner to determine which course material
+            that could be solved by using a game mechanism.
+          </p>
+        </div>
+
+        <div class="container__details--middle">
+          <vue-sticky-sidebar
+            containerSelector=".container__details--middle"
+            topSpacing="60"
+            class="container__details--sidebar"
+          >
+            <ul>
+              <li><a href="#">Home page</a></li>
+              <li><a href="#">Signup page</a></li>
+              <li><a href="#">Dashboard page</a></li>
+            </ul>
+          </vue-sticky-sidebar>
+          <section class="container__details--img">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+              lacus ultricies consequat nisi, ac sit eu. Integer eu elementum
+              platea est neque. Consectetur non quam aliquam risus eros, velit
+              sed faucibus et. Feugiat in sagittis dis eu sodales facilisis diam
+              blandit vel. Vitae in sed augue elementum mus. Donec purus in nunc
+              enim, vivamus. Massa rhoncus scelerisque massa nibh sit
+              scelerisque risus. Elementum id felis bibendum velit sed enim
+              lacus, neque. Sit sit urna, tortor, quis tincidunt purus feugiat.
+              Purus tellus egestas dolor aenean etiam vulputate ut eu. Nunc id
+              quisque tempus faucibus. Euismod in donec velit sit vitae.
+              Vulputate amet luctus dignissim quam. Pretium, bibendum neque
+              vitae ac senectus condimentum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+              lacus ultricies consequat nisi, ac sit eu. Integer eu elementum
+              platea est neque. Consectetur non quam aliquam risus eros, velit
+              sed faucibus et. Feugiat in sagittis dis eu sodales facilisis diam
+              blandit vel. Vitae in sed augue elementum mus. Donec purus in nunc
+              enim, vivamus. Massa rhoncus scelerisque massa nibh sit
+              scelerisque risus. Elementum id felis bibendum velit sed enim
+              lacus, neque. Sit sit urna, tortor, quis tincidunt purus feugiat.
+              Purus tellus egestas dolor aenean etiam vulputate ut eu. Nunc id
+              quisque tempus faucibus. Euismod in donec velit sit vitae.
+              Vulputate amet luctus dignissim quam. Pretium, bibendum neque
+              vitae ac senectus condimentum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+              lacus ultricies consequat nisi, ac sit eu. Integer eu elementum
+              platea est neque. Consectetur non quam aliquam risus eros, velit
+              sed faucibus et. Feugiat in sagittis dis eu sodales facilisis diam
+              blandit vel. Vitae in sed augue elementum mus. Donec purus in nunc
+              enim, vivamus. Massa rhoncus scelerisque massa nibh sit
+              scelerisque risus. Elementum id felis bibendum velit sed enim
+              lacus, neque. Sit sit urna, tortor, quis tincidunt purus feugiat.
+              Purus tellus egestas dolor aenean etiam vulputate ut eu. Nunc id
+              quisque tempus faucibus. Euismod in donec velit sit vitae.
+              Vulputate amet luctus dignissim quam. Pretium, bibendum neque
+              vitae ac senectus condimentum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+              lacus ultricies consequat nisi, ac sit eu. Integer eu elementum
+              platea est neque. Consectetur non quam aliquam risus eros, velit
+              sed faucibus et. Feugiat in sagittis dis eu sodales facilisis diam
+              blandit vel. Vitae in sed augue elementum mus. Donec purus in nunc
+              enim, vivamus. Massa rhoncus scelerisque massa nibh sit
+              scelerisque risus. Elementum id felis bibendum velit sed enim
+              lacus, neque. Sit sit urna, tortor, quis tincidunt purus feugiat.
+              Purus tellus egestas dolor aenean etiam vulputate ut eu. Nunc id
+              quisque tempus faucibus. Euismod in donec velit sit vitae.
+              Vulputate amet luctus dignissim quam. Pretium, bibendum neque
+              vitae ac senectus condimentum.
+            </p>
+          </section>
+        </div>
       </div>
     </main>
   </div>
@@ -75,7 +162,7 @@
 <script>
 import Navigation from '~/components/Navigation.vue'
 import { toHead } from 'vue-datocms'
-import { request, gql, seoMetaTagsFields } from '~/lib/datocms'
+import { request, gql, imageFields, seoMetaTagsFields } from '~/lib/datocms'
 
 export default {
   components: {
@@ -108,10 +195,13 @@ export default {
               hex
             }
             coverImage {
-              url
+              responsiveImage(imgixParams: { fit: crop, ar: "16:9", w: 860 }) {
+                ...imageFields
+              }
             }
           }
         }
+        ${imageFields}
         ${seoMetaTagsFields}
       `,
       variables: {
@@ -146,7 +236,6 @@ export default {
   mounted() {
     window.scrollTo(0, 0)
     this.applyColor()
-    console.log(this.work.color.hex)
   },
   beforeUpdate() {
     this.applyColor()

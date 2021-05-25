@@ -3,7 +3,7 @@
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color:var(--accent-color-one);
+  background-color:var(--link-color);
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   border-radius:5px
@@ -38,7 +38,7 @@ a, button {
   
     &__inner {
       margin: 5.5rem auto;
-      max-width:60vw;
+      max-width:65vw;
   
       @media (max-width: 40rem) {
         margin: 3.5rem auto;
