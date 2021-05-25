@@ -18,6 +18,7 @@
     "aos": "^3.0.0-beta.6",
     "graphql": "^15.5.0",
     "graphql-tag": "^2.12.4",
+    "node-fetch": "^2.6.1",
     "nuxt": "^2.0.0",
     "smooth-vuebar": "^1.4.0",
     "vue-datocms": "^1.0.1",

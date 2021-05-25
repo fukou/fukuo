@@ -81,7 +81,7 @@ export default {
       ])
     },
     applyColor() {
-      let data = `.container__detail--overview::after { background: linear-gradient(90deg, ${this.work.color.hex} 0%, ${this.work.color.hex} 100%); } `
+      let data = `.container__detail--overview::after { background: linear-gradient(90deg, ${this.work.color.hex} 30%, ${this.work.color.hex} 100%); } `
 
       let style = document.createElement('style')
       style.type = 'text/css'

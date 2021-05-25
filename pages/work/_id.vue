@@ -73,13 +73,11 @@
           </figcaption>
         </figure>
       </div>
-      <div class="container__details">
+      <div class="container__details" v-if="work.goal">
         <div class="container__details--top">
           <h2>Product goal</h2>
           <p>
-            To create an e-learning platform that is interesting, unique and
-            interactive by giving the learner to determine which course material
-            that could be solved by using a game mechanism.
+            {{ work.goal }}
           </p>
         </div>
 
@@ -90,72 +88,31 @@
             class="container__details--sidebar"
           >
             <ul>
-              <li><a href="#">Home page</a></li>
-              <li><a href="#">Signup page</a></li>
-              <li><a href="#">Dashboard page</a></li>
+              <li v-for="(link, index) in work.asset" :key="index">
+                <a
+                  :href="
+                    '#' +
+                    link.responsiveImage.alt.toLowerCase().replace(/ /g, '')
+                  "
+                  >{{ link.responsiveImage.alt }}</a
+                >
+              </li>
             </ul>
           </vue-sticky-sidebar>
           <section class="container__details--img">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
-              lacus ultricies consequat nisi, ac sit eu. Integer eu elementum
-              platea est neque. Consectetur non quam aliquam risus eros, velit
-              sed faucibus et. Feugiat in sagittis dis eu sodales facilisis diam
-              blandit vel. Vitae in sed augue elementum mus. Donec purus in nunc
-              enim, vivamus. Massa rhoncus scelerisque massa nibh sit
-              scelerisque risus. Elementum id felis bibendum velit sed enim
-              lacus, neque. Sit sit urna, tortor, quis tincidunt purus feugiat.
-              Purus tellus egestas dolor aenean etiam vulputate ut eu. Nunc id
-              quisque tempus faucibus. Euismod in donec velit sit vitae.
-              Vulputate amet luctus dignissim quam. Pretium, bibendum neque
-              vitae ac senectus condimentum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
-              lacus ultricies consequat nisi, ac sit eu. Integer eu elementum
-              platea est neque. Consectetur non quam aliquam risus eros, velit
-              sed faucibus et. Feugiat in sagittis dis eu sodales facilisis diam
-              blandit vel. Vitae in sed augue elementum mus. Donec purus in nunc
-              enim, vivamus. Massa rhoncus scelerisque massa nibh sit
-              scelerisque risus. Elementum id felis bibendum velit sed enim
-              lacus, neque. Sit sit urna, tortor, quis tincidunt purus feugiat.
-              Purus tellus egestas dolor aenean etiam vulputate ut eu. Nunc id
-              quisque tempus faucibus. Euismod in donec velit sit vitae.
-              Vulputate amet luctus dignissim quam. Pretium, bibendum neque
-              vitae ac senectus condimentum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
-              lacus ultricies consequat nisi, ac sit eu. Integer eu elementum
-              platea est neque. Consectetur non quam aliquam risus eros, velit
-              sed faucibus et. Feugiat in sagittis dis eu sodales facilisis diam
-              blandit vel. Vitae in sed augue elementum mus. Donec purus in nunc
-              enim, vivamus. Massa rhoncus scelerisque massa nibh sit
-              scelerisque risus. Elementum id felis bibendum velit sed enim
-              lacus, neque. Sit sit urna, tortor, quis tincidunt purus feugiat.
-              Purus tellus egestas dolor aenean etiam vulputate ut eu. Nunc id
-              quisque tempus faucibus. Euismod in donec velit sit vitae.
-              Vulputate amet luctus dignissim quam. Pretium, bibendum neque
-              vitae ac senectus condimentum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
-              lacus ultricies consequat nisi, ac sit eu. Integer eu elementum
-              platea est neque. Consectetur non quam aliquam risus eros, velit
-              sed faucibus et. Feugiat in sagittis dis eu sodales facilisis diam
-              blandit vel. Vitae in sed augue elementum mus. Donec purus in nunc
-              enim, vivamus. Massa rhoncus scelerisque massa nibh sit
-              scelerisque risus. Elementum id felis bibendum velit sed enim
-              lacus, neque. Sit sit urna, tortor, quis tincidunt purus feugiat.
-              Purus tellus egestas dolor aenean etiam vulputate ut eu. Nunc id
-              quisque tempus faucibus. Euismod in donec velit sit vitae.
-              Vulputate amet luctus dignissim quam. Pretium, bibendum neque
-              vitae ac senectus condimentum.
-            </p>
+            <figure v-for="(image, index) in work.asset" :key="index">
+              <div
+                :id="image.responsiveImage.alt.toLowerCase().replace(/ /g, '')"
+              >
+                <datocms-image :data="image.responsiveImage" />
+                <figcaption>{{ image.responsiveImage.alt }}</figcaption>
+              </div>
+            </figure>
           </section>
         </div>
       </div>
     </main>
+    <footer class="container--detail__footer"></footer>
   </div>
 </template>
 
@@ -191,8 +148,14 @@ export default {
             overview {
               value
             }
+            goal
             color {
               hex
+            }
+            asset {
+              responsiveImage {
+                ...imageFields
+              }
             }
             coverImage {
               responsiveImage(imgixParams: { fit: crop, ar: "16:9", w: 860 }) {
