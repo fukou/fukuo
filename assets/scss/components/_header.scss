@@ -1,6 +1,6 @@
 body {
-  &.about {
-    nav {
+  &.about, &.detail {
+    .nav {
       ul {
         li.home {
           display: none;
@@ -38,8 +38,20 @@ body {
     }
   }
 
-  &:not(.about) {
-    nav {
+  &.detail {
+    .nav {
+      ul {
+        li {
+          a {
+            color:var(--link-color);
+          }
+        }
+      }
+    }
+  }
+
+  &:not(.about):not(.detail) {
+    .nav {
       ul {
         li.home {
           margin-left: 0;
@@ -52,7 +64,7 @@ body {
   }
 }
 
-nav {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;

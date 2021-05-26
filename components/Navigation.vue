@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav>
+    <nav class="nav">
       <ul>
         <li class="about">
           <nuxt-link to="/" aria-label="Home">

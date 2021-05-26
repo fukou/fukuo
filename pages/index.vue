@@ -105,9 +105,19 @@ export default {
     })
     return { ready: !!data, ...data }
   },
+  methods: {
+    removeClass() {
+      const body = document.body
+      body.classList.remove('detail')
+    },
+  },
   mounted() {
     window.scrollTo(0, 0)
     hover()
+    this.removeClass()
+  },
+  beforeUpdate() {
+    this.removeClass()
   },
   head() {
     return {

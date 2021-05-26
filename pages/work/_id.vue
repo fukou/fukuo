@@ -194,18 +194,23 @@ export default {
       let data = `.container__detail--overview::after { background: linear-gradient(90deg, ${this.work.color.hex} 0%, ${this.work.color.hex} 100%); } `
 
       let style = document.createElement('style')
-      style.type = 'text/css'
       //append the style node as child of current component
       this.$el.appendChild(style)
       style.innerHTML = data
+    },
+    addClass() {
+      const body = document.body
+      body.classList.add('detail')
     },
   },
   mounted() {
     window.scrollTo(0, 0)
     this.applyColor()
+    this.addClass()
   },
   beforeUpdate() {
     this.applyColor()
+    this.addClass()
   },
   head() {
     if (!this.ready) {
