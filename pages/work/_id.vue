@@ -116,6 +116,54 @@
         </div>
       </div>
     </main>
+    <div class="container--detail__more">
+      <ul>
+        <li v-for="(more, index) in moreWorks" :key="index">
+          <nuxt-link :to="`/work/${more.slug}`">
+            <div class="container--detail__more--link" v-if="index === 0">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M28.3333 15.5833L28.3333 18.4166L11.3333 18.4166L11.3333 21.25L8.49998 21.25L8.49998 18.4166L5.66665 18.4166L5.66665 15.5833L8.49998 15.5833L8.49998 12.75L11.3333 12.75L11.3333 15.5833L28.3333 15.5833ZM14.1666 9.91665L11.3333 9.91665L11.3333 12.75L14.1666 12.75L14.1666 9.91665ZM14.1666 9.91665L17 9.91665L17 7.08331L14.1666 7.08331L14.1666 9.91665ZM14.1666 24.0833L11.3333 24.0833L11.3333 21.25L14.1666 21.25L14.1666 24.0833ZM14.1666 24.0833L17 24.0833L17 26.9166L14.1666 26.9166L14.1666 24.0833Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <div>
+                <span>Previous project</span>
+                <span class="title">{{ more.title }}</span>
+              </div>
+            </div>
+            <div class="container--detail__more--link" v-else-if="index === 1">
+              <div>
+                <span>Next project</span>
+                <span class="title">{{ more.title }}</span>
+              </div>
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4 11L4 13L16 13L16 15L18 15L18 13L20 13L20 11L18 11L18 9L16 9L16 11L4 11ZM14 7L16 7L16 9L14 9L14 7ZM14 7L12 7L12 5L14 5L14 7ZM14 17L16 17L16 15L14 15L14 17ZM14 17L12 17L12 19L14 19L14 17Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </nuxt-link>
+        </li>
+      </ul>
+    </div>
     <footer class="container--detail__footer"></footer>
   </div>
 </template>
@@ -160,6 +208,22 @@ export default {
               responsiveImage {
                 ...imageFields
               }
+            }
+            coverImage {
+              responsiveImage(imgixParams: { fit: crop, ar: "16:9", w: 860 }) {
+                ...imageFields
+              }
+            }
+          }
+          moreWorks: allWorks(
+            orderBy: date_DESC
+            first: 2
+            filter: { slug: { neq: $slug } }
+          ) {
+            title
+            slug
+            color {
+              hex
             }
             coverImage {
               responsiveImage(imgixParams: { fit: crop, ar: "16:9", w: 860 }) {

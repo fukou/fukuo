@@ -10,6 +10,90 @@
             }
         }
 
+        &__more {
+            width: 100%;
+            position: relative;
+            max-width: 70vw;
+            margin: 3.5rem auto;
+
+            @media (max-width:60rem) {
+                max-width: 60rem;
+                margin:0 auto;
+            }
+
+            &--link {
+                display: inline-flex;
+                align-items: center;
+
+                font-family: var(--heading-font);
+                font-size: 1.95rem;
+
+                > div {
+                    display: flex;
+                    flex-direction: column;
+
+                    span.title {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin:0;
+                padding:0;
+
+                @media (max-width:60rem) {
+                    flex-direction: column;
+                }
+
+                li {
+                    width: 100%;
+
+                    svg {
+                        transform: scale(1.1);
+                    }
+
+                    &:first-child a {
+                        svg {
+                            margin-right: 2rem;
+                        }
+                    }
+
+                    &:last-child a {
+                        justify-content: flex-end;
+
+                        svg {
+                            margin-left:2rem;
+                        }
+                    }
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        color:var(--link-color);
+                        padding:2rem 1.5rem;
+
+                        text-decoration: none;
+                        border-radius: 8px;
+                        transition: 0.5s;
+
+                        @media (max-width:60rem) {
+                            padding:2rem 2.15rem;
+                        }
+
+                        &:hover {
+                            background-color: rgba(#111, 0.05);
+                        }
+                    }
+                }
+            }
+        }
+
         &__footer {
             display: flex;
             align-items: center;
@@ -136,12 +220,14 @@
     }
 
     &__details {
-      margin: 5.5rem auto 6rem auto;
+      margin: 5.5rem auto 5.5rem auto;
       max-width:65vw;
+      padding-bottom: 3.5rem;
   
       @media (max-width: 40rem) {
         margin: 3.5rem auto;
         max-width: 60rem;
+        padding:0;
       }
 
       &--sidebar {
@@ -292,3 +378,12 @@
         }
     }
 }
+
+@keyframes AnimationName {
+    0% {
+      background-position: left;
+    }
+    100% {
+      background-position: right;
+    }
+  }
