@@ -44,14 +44,16 @@
 
     &__inner {
       position: relative;
-      width: 100vw;
+      // width: 100vw;
       
-      margin-left: 50%;
-      transform: translateX(-50%);
+      // margin-left: 50%;
+      // transform: translateX(-50%);
+      width:100%;
+      display: flex;
 
-      @media (max-width: 60rem) {
-        display: none;
-      }
+      // @media (max-width: 60rem) {
+      //   display: none;
+      // }
 
       & > * {
         white-space: nowrap;

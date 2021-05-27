@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <!-- <div class="footer__marquee">
+    <div class="footer__marquee">
       <div class="footer__inner">
         <ul>
           <li>
@@ -17,9 +17,9 @@
           </li>
         </ul>
       </div>
-    </div> -->
+    </div>
 
-    <Marquee class="footer__inner" duration="9000">
+    <!-- <Marquee class="footer__inner" duration="9000">
       <ul>
         <li>
           <a href="https://twitter.com/_fukuo">Twitter</a>
@@ -34,7 +34,7 @@
           <a href="https://codepen.io/fukuo">Codepen</a>
         </li>
       </ul>
-    </Marquee>
+    </Marquee> -->
 
     <div class="footer__mobile">
       <ul>

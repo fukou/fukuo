@@ -90,10 +90,6 @@ export default {
         href:
           'https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap'
       },
-      {
-        rel: 'stylesheet',
-        href: 'https://unpkg.com/emoji.css/dist/emoji.min.css'
-      },
       { rel: 'manifest', href: '/site.webmanifest' }
     ],
     script: [
@@ -120,7 +116,7 @@ export default {
     },
     { src: '~/plugins/vue-stickysidebar.js', mode: 'client' },
     { src: '~/plugins/vue-scrollactive.js', mode: 'client' },
-    { src: '~/plugins/vue-custom-marquee.js', ssr: false },
+    // { src: '~/plugins/vue-custom-marquee.js', ssr: false },
     '~/plugins/vue-sparkles.js',
     '~/plugins/datocms'
   ],
