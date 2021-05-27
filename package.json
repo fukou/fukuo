@@ -21,6 +21,7 @@
     "node-fetch": "^2.6.1",
     "nuxt": "^2.0.0",
     "smooth-vuebar": "^1.4.0",
+    "vue-custom-marquee": "^0.0.1",
     "vue-datocms": "^1.0.1",
     "vue-demi": "^0.7.5",
     "vue-meta": "^2.4.0",

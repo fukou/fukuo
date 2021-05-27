@@ -9,10 +9,8 @@
         <header class="header" data-aos="fade-up" data-aos-delay="500">
           <span>Hello</span>, my name is <strong>Faiz Ichsan Jaya</strong>. I am
           a <span>front-end web developer</span>, passionate about building
-          <span
-            ><VueSparkles color="#DE3E3E"
-              ><u>good designs</u></VueSparkles
-            ></span
+          <VueSparkles color="#DE3E3E"
+            ><span><u>good designs</u></span></VueSparkles
           >
           and apps that is
           <em>accessible</em>

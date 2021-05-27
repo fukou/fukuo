@@ -119,6 +119,10 @@
 
             border-bottom:3px solid #111;
             padding-bottom:1.45rem;
+
+            @media (max-width:60rem) {
+                flex-direction: row-reverse;
+            }
         }
 
         &--live {
@@ -139,6 +143,10 @@
         &--heading {
             flex:1;
             padding:0 1.5rem;
+
+            @media (max-width:60rem) {
+                padding:0;
+            }
 
             h1 {
                 font-family: var(--heading-font);
