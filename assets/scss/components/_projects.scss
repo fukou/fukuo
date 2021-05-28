@@ -84,15 +84,11 @@
     &__inner {
       position: relative;
       margin: 0rem auto;
-      max-width: 65vw;
+      max-width: 60rem;
       margin-top: -12.5rem;
       background-color: #fff;
       border: 3px solid #333;
       padding: 4.5rem 5rem 5rem 5rem;
-
-      @media (max-width:60rem) {
-        max-width: 60rem;
-      }
 
       &:before {
         content: '';

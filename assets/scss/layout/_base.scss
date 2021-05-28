@@ -38,11 +38,10 @@ a, button {
   
     &__inner {
       margin: 5.5rem auto;
-      max-width:65vw;
+      max-width:60rem;
   
       @media (max-width: 40rem) {
         margin: 3.5rem auto;
-        max-width: 60rem;
       }
     }
   }

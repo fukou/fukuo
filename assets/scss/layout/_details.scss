@@ -13,11 +13,10 @@
         &__more {
             width: 100%;
             position: relative;
-            max-width: 70vw;
+            max-width: 70rem;
             margin: 3.5rem auto;
 
             @media (max-width:60rem) {
-                max-width: 60rem;
                 margin:0 auto;
             }
 
@@ -229,12 +228,11 @@
 
     &__details {
       margin: 5.5rem auto 5.5rem auto;
-      max-width:65vw;
+      max-width:60rem;
       padding-bottom: 3.5rem;
   
       @media (max-width: 40rem) {
         margin: 3.5rem auto;
-        max-width: 60rem;
         padding:0;
       }
 
