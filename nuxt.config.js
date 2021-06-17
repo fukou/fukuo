@@ -116,7 +116,6 @@ export default {
     },
     { src: '~/plugins/vue-stickysidebar.js', mode: 'client' },
     { src: '~/plugins/vue-scrollactive.js', mode: 'client' },
-    // { src: '~/plugins/vue-custom-marquee.js', ssr: false },
     '~/plugins/vue-sparkles.js',
     '~/plugins/datocms'
   ],
