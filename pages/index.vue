@@ -12,7 +12,7 @@
           <VueSparkles color="#DE3E3E"
             ><span><u>good designs</u></span></VueSparkles
           >
-          and apps that is
+          and apps that are
           <em>accessible</em>
           to everyone. Currently learning more about <span>UX design</span> &
           <u>technology</u>.
