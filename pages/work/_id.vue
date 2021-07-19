@@ -40,7 +40,7 @@
           <div class="container__detail--type">
             <div>
               <h2>Project type</h2>
-              <p>Type</p>
+              <p>{{ work.types }}</p>
             </div>
             <div>
               <h2>Year</h2>
@@ -196,6 +196,7 @@ export default {
             slug
             date
             role
+            types
             liveSite
             overview {
               value

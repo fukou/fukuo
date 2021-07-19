@@ -52,10 +52,7 @@
 
             <div class="projects__list--item__content disabled" v-else>
               <img :src="work.shape.url" />
-              <div
-                class="projects__list--links"
-                :data-img="work.coverImage.url"
-              >
+              <div>
                 <h2>{{ work.title }}</h2>
                 <p v-html="work.summary"></p>
               </div>
