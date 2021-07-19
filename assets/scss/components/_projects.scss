@@ -62,13 +62,20 @@
           margin-bottom: 1.5rem;
         }
   
-        a {
+        &__content {
           display: grid;
           grid-template-columns: 3.5rem auto;
           gap:1.5rem;
   
           @media (max-width:60rem) {
             grid-template-columns: 1fr;
+          }
+
+          &.disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+
+            filter: blur(3px);
           }
           
           color: inherit;

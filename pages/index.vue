@@ -39,7 +39,7 @@
             v-for="work in works"
             :key="work.slug"
           >
-            <nuxt-link :to="`/work/${work.slug}`">
+            <nuxt-link :to="`/work/${work.slug}`" v-if="work.release === true" class="projects__list--item__content">
               <img :src="work.shape.url" />
               <div
                 class="projects__list--links"
@@ -49,6 +49,17 @@
                 <p v-html="work.summary"></p>
               </div>
             </nuxt-link>
+
+            <div class="projects__list--item__content disabled" v-else>
+              <img :src="work.shape.url" />
+              <div
+                class="projects__list--links"
+                :data-img="work.coverImage.url"
+              >
+                <h2>{{ work.title }}</h2>
+                <p v-html="work.summary"></p>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -90,6 +101,7 @@ export default {
             title
             summary
             slug
+            release
             coverImage {
               url
             }
