@@ -223,6 +223,7 @@ export default {
           ) {
             title
             slug
+            release
             color {
               hex
             }
@@ -256,7 +257,7 @@ export default {
       ])
     },
     applyColor() {
-      let data = `.container__detail--overview::after { background: linear-gradient(90deg, ${this.work.color.hex} 0%, ${this.work.color.hex} 100%); } `
+      let data = `.container__detail--overview::after {  background: radial-gradient(circle at 100% 80%, #F3EEE4, transparent 30%),radial-gradient(circle at 80% 50%, ${this.work.color.hex}, transparent 25%),radial-gradient(circle at 0% 100%, ${this.work.color.hex}, ${this.work.color.hex}, transparent 25%);} `
 
       let style = document.createElement('style')
       //append the style node as child of current component
@@ -295,7 +296,9 @@ export default {
                     position: absolute;
                     left:0;
                     top:0;
-                    width:100%;
+                    width: 100vw;
+                    margin-left: calc(50% - 50vw);
+
                     height:100%;
                 
                     filter: blur(200px);
