@@ -136,6 +136,10 @@
 
                 border-radius: 50%;
                 transform: rotate(-45deg);
+
+                &.light-text {
+                    color:#fff;
+                }
             }
         }
 
