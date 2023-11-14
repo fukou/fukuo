@@ -33,7 +33,7 @@
   "devDependencies": {
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "node-sass": "^7.0.0",
+    "node-sass": "^9.0.0",
     "prettier": "^1.16.4",
     "sass-loader": "^10.1.1"
   }
