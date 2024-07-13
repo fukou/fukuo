@@ -47,7 +47,7 @@
         </li>
         <li class="resume">
           <a
-            href="/resume_Faiz_Ichsan_Jaya_(2023).pdf"
+            href="/faizij_resume_2024.pdf"
             target="_blank"
             rel="noopener noreferrer"
             >Resume
